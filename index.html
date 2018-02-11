@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lan='en'>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crystal Collector</title>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Quicksand" rel="stylesheet">	
+</head>
+<body>
+<div class="container">
+		<div class="row">
+            <h1 class="page-header" id="name">Crystal Collector</h1>
+        </div>   <!--rowdiv-->	  
+        <div class="row">
+            <h3 class="paragraph">You will be given a random number at the start of the 	game.
+            	There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+				You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
+				The value of each crystal is hidden until clicked.
+				Each new game, the crystals will have a new value.
+				Good Luck!
+			</h3>
+				<hr>
+		</div>	<!--rowdiv-->	
+
+	
+		<div class="row crystals">
+			<div class="col-sm-12">
+			<img src="assets/images/crystal1.png" class="click" id="red">
+			<img src="assets/images/crystal2.png" class="click" id="white">
+			<img src="assets/images/crystal3.png" class="click" id="green">
+			<img src="assets/images/crystal4.png" class="click" id="blue">
+			</div>
+		</div>			
+
+			
+	<div class="row start">
+		<div class="col-lg-4">
+		<div class="total"></div>
+		</div>
+			<div class="col-lg-4">	
+			<div class="result">
+					<h2>
+					Wins:<div id="yourWins"></div>
+					Losses:<div id="yourLosses"></div>
+					</h2>
+			</div>
+			</div>
+
+	
+
+	<div class="col-lg-4">
+	<div class="score">
+		<h2>Your total score:</h2>
+	</div>
+	<div class="addition"></div>	
+	</div>
+	</div>
+ 
+
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+	
+	
+</body>
+</html>
